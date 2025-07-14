@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background: #fff;
+            color:#333;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: white;
+            border-bottom: 1px solid #eee;
+            font-size: large;
+        }
+        nav a{
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            padding-left: 34px;
+        
+        }
+        .btn{
+            background-color: #006bff;
+            color: white;
+            padding: 10px 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: larger;
+        }
+        .new{
+            text-align: center;
+            padding: 5px;
+            font-size: larger;
+            
+
+        }
+        .tabs{
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .tabs a{
+            margin: 0 10px;
+           color: #706464;
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 1px solid;
+        }
+        .fit{
+            
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        .ft{
+            max-width: 600px;
+            margin: 10px 0;
+            text-align: left;
+
+        }
+        .profile{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        .profile-img{
+            position: relative;
+            max-width: 550px;
+            border-radius: 8px;
+            margin: 20px;
+            float: right;
+            left: 300px;
+            bottom: 350px;
+            
+        }
+        .high{
+            background: #f3f7ff;
+            border-radius: 8px;
+            padding: 10px 20px;
+            margin-top: 10px;
+        }
+        select{
+            border: none;
+        }
+
+         @media only screen and (max-width:600px) {
+          .btn {grid-area: 1 / span 6;}
+         .new {grid-area: 1 /span 6;}
+          .tabs {grid-area: 1 /span 6;}
+          .tabs a {grid-area: 1 /span 6;}
+           .fit {grid-area: 1 /span 6;}
+           .ft {grid-area: 1 /span 6;}
+           .profile {grid-area: 1 /span 6;}
+           .profile-img {grid-area: 1 /span 6;}
+           .high {grid-area: 1 /span 6;}
+           
+        }
+
+        @media only screen and (min-width:600px) {
+         .tabs {grid-area: 1 /span 6;}
+          .tabs a {grid-area: 1 /span 6;}
+           .fit {grid-area: 1 /span 6;}
+           .ft {grid-area: 1 /span 6;}
+           .profile {grid-area: 1 /span 6;}
+           .profile-img {grid-area: 1 /span 6;}
+           .high {grid-area: 1 /span 6;}
+        }
+
+        @media only screen and (min-width:768px) {
+          .tabs {grid-area: 1 /span 6;}
+          .tabs a {grid-area: 1 /span 6;}
+           .fit {grid-area: 1 /span 6;}
+           .ft {grid-area: 1 /span 6;}
+           .profile {grid-area: 1 /span 6;}
+           .profile-img {grid-area: 1 /span 6;}
+           .high {grid-area: 1 /span 6;}
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div style="color: #006bff;"> <strong><img src="image/logo1.png" alt="" width="20">Calendly</strong></div>
+        <nav>
+            <a href="#">product</a>
+            <a href="#">solution <select name="" id="" class="p"></select> </a>
+            <a href="#">Enterprise</a>
+            <a href="#">pricing</a>
+            <a href="#">Resources <select name="" id=""></select></a>
+        </nav>
+
+        <div>log in
+            <button class="btn">Get started</button>
+        </div>
+    </header>
+
+    <section class="new">
+        <h1>Smarter scheduling for teams <br>who conduct meeting at scale</h1>
+        <div class="tabs">
+            <a style="color: #006bff;" href="#">sales</a>
+            <a href="#">marketing</a>
+            <a href="#">customar success</a>
+            <a href="#">rescruting</a>
+            <a href="#">IT</a>
+            <a href="#">Education</a>
+        </div>
+    </section>
+
+    <section style="margin: 15px;" class="fit">
+        <div class="ft">
+            <h3> <img src="image/log.jpg" alt="logo">Drive more revenue</h3>
+            <p>Book high value meetings in seconds and turn scheduling into a competitive advertage</p>
+
+        </div>
+
+    <div class="ft">
+        <h3> <img src="image/log2.jpg" alt="logo">speed up your scales cycle</h3>
+        <p>Keep your deal momentum high and remove scheduling friction at every stage of your sales cycle</p>
+    </div>
+
+    <div class="ft">
+        <h3> <img src="image/log.jpg" alt="logo">Close more deals</h3>
+        <p>Customize reminder and follow-up workflow to move deals along intergrate with sales tools and remove logistical taxts to focus on selling.</p>
+        </div>
+    </section>
+    <p><a style="text-decoration: none;color: blue;" href="#">learn more -></a> </p>
+
+    <section class="profile">
+        <img src="image/log3.png" class="profile-img" alt="image profile">
+        <div>
+        
+    </section>
+</body>
+</html>
